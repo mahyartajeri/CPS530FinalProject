@@ -30,7 +30,7 @@
     This simplicity comes at a cost however as Semantic UI does lack the amenities of a framework such as Bootstrap. 
     It has less browser compatibility, a less reponsive design which can be an issue when developing mobile applications, 
     and a much smaller community making it more difficult to share and acquire knowledge about the framework. 
-    Web Devlopers looking to create simple websites focusing primarily on aesthetic would enjoy using Semantic UI. 
+    Web Developers looking to create simple websites focusing primarily on aesthetic would enjoy using Semantic UI. 
     Anything more complicated however and they would be better off using a more thorough framework such as Angular.</p>
 </div>
 <div>
