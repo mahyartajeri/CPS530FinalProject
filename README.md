@@ -79,11 +79,21 @@
     <h3>You can now use the Semantic UI framwork<h3>
     <p>Make sure to include the following code in the header section of your html file: <br>
       	<code>
-		&lt;!-- You MUST include jQuery before Fomantic --&gt;<br>
-		&lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"&gt;&lt;/script&gt;<br>
-		&lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css"&gt;<br>
-		&lt;script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"&gt;&lt;/script&gt;	
-	</code>
+		    &lt;!-- You MUST include jQuery before Fomantic --&gt;
+            &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"&gt;&lt;/script&gt;
+            &lt;link rel="stylesheet" type="text/css" href="/dist/semantic.min.css"&gt;
+            &lt;script src="/dist/semantic.min.js"&gt;&lt;/script&gt;	
+	    </code>
+    </p>
+    <h3>Alternatively, you can forgo the above steps and use a CDN provider</h3>
+    <p>
+        Simply include the following code in the header section of your html file: <br>
+        <code>
+            &lt;!-- You MUST include jQuery before Fomantic --&gt;
+            &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"&gt;&lt;/script&gt;
+            &lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css"&gt;
+            &lt;script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"&gt;&lt;/script&gt;
+        </code>
     </p>
     
 </div>
