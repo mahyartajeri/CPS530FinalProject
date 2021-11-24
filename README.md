@@ -79,7 +79,7 @@
     <h3>You can now use the Semantic UI framwork<h3>
     <p>Make sure to include the following code in the header section of your html file: <br>
       	<code>
-		    &lt;!-- You MUST include jQuery before Fomantic --&gt;
+		&lt;!-- You MUST include jQuery before Fomantic --&gt;
             &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"&gt;&lt;/script&gt;
             &lt;link rel="stylesheet" type="text/css" href="/dist/semantic.min.css"&gt;
             &lt;script src="/dist/semantic.min.js"&gt;&lt;/script&gt;	
