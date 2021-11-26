@@ -1,1 +1,67 @@
+#Page 2 Code:
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: Zen Kurenaido; background-color: aliceblue;">
+<h1 style="text-align: center;">How to install Semantic UI and Ruby on Rails on Windows</h1>
+<div>
+    <h2>Semantic UI</h2>
+    <h3>Step 1: Download the NodeJS Executable</h3>
+    <p>Link to the download can be found on https://nodejs.org/en/</p>
+    <h3>Step 2: Install Gulp</h3>
+    <p>Enter into the command line: "npm install gulp-cli -g" <br> Next enter: "npm install gulp@4.0.0 -D"</p>
+    <h3>Step 3: Make a project folder in the directory of your choice. Ex: C:\Desktop\my_folder</h3>
+    <p>Don't forget to navigate to said folder using: cd C:\Desktop\my_folder</p>
+    <h3>Step 4: Create your package.json file</h3>
+    <p>Run: "npm init" in your project directory and press enter until prompted for yes</p>
+    <h3>Step 5: Install Fomantic UI - A community ran fork of Semantic UI</h3>
+    <p>Run: "npm install --ignore-scripts fomantic-ui"<br>
+    Next run: "cd node_modules/fomantic-ui" <br> Next run: "npx gulp install" <br>
+    You will then be prompted by Fomantic UI to choose your method of installation, Automatic is the easiest <br>
+    Finally run: "npx gulp build"</p>
+    <h3>You can now use the Semantic UI framwork<h3>
+    <p>Make sure to include the following code in the header section of your html file: <br>
+      	<code>
+		&lt;!-- You MUST include jQuery before Fomantic --&gt;
+            &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"&gt;&lt;/script&gt;
+            &lt;link rel="stylesheet" type="text/css" href="/dist/semantic.min.css"&gt;
+            &lt;script src="/dist/semantic.min.js"&gt;&lt;/script&gt;	
+	    </code>
+    </p>
+    <h3>Alternatively, you can forgo the above steps and use a CDN provider</h3>
+    <p>
+        Simply include the following code in the header section of your html file: <br>
+        <code>
+            &lt;!-- You MUST include jQuery before Fomantic --&gt;
+            &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"&gt;&lt;/script&gt;
+            &lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css"&gt;
+            &lt;script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"&gt;&lt;/script&gt;
+        </code>
+    </p>
+    
+</div>
+
+<div>
+    <h2>Ruby on Rails</h2>
+    <h3>Step 1: Install Ruby</h3>
+    <p>Download an installation package from http://rubyinstaller.org/ <br>
+    Make sure ruby is added to your path</p>
+    <h3>Step 2: Install Rails</h3>
+    <p>If you correctly installed Ruby, you should be able to run this command to install Rails: "gem install rails"</p>
+    <h3>Step 3: Using NodeJS and and npm package manager, install Yarn</h3>
+    <p>Run: "npm install --global yarn"</p>
+    <h3>Step 4: Installation Verification</h3>
+    <p>Run: "rails new demo" <br>
+       Run: "cd demo" <br>
+       Run: "rails server" <br>
+       Now open your browse and type http://localhost:3000 <br>
+       A ruby introduction site will appear meaning you are ready to start developing!</p>
+</div>
+</body>
+</html>
