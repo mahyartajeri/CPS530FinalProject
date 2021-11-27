@@ -137,5 +137,30 @@
     </div>
 </div>
 </div>
+
+<% 
+require 'tk'
+
+root = TkRoot.new
+root.title = "Window"
+
+canvas = TkCanvas.new(root) do
+   place('height' => 170, 'width' => 100, 'x' => 10, 'y' => 10)
+end
+
+TkcLine.new(canvas, 0, 5, 100, 5)
+TkcLine.new(canvas, 0, 15, 100, 15, 'width' => 2)
+TkcLine.new(canvas, 0, 25, 100, 25, 'width' => 3)
+TkcLine.new(canvas, 0, 35, 100, 35, 'width' => 4)
+TkcLine.new(canvas, 0, 55, 100, 55, 'width' => 3, 'dash' => ".")
+TkcLine.new(canvas, 0, 65, 100, 65, 'width' => 3, 'dash' => "-")
+TkcLine.new(canvas, 0, 75, 100, 75, 'width' => 3, 'dash' => "-.")
+TkcLine.new(canvas, 0, 85, 100, 85, 'width' => 3, 'dash' => "-..")
+TkcLine.new(canvas, 0, 105, 100, 105, 'width' => 2, 'arrow' => "first")
+TkcLine.new(canvas, 0, 115, 100, 115, 'width' => 2, 'arrow' => "last")
+TkcLine.new(canvas, 0, 125, 100, 125, 'width' => 2, 'arrow' => "both")
+TkcLine.new(canvas, 10, 145, 90, 145, 'width' => 15, 'capstyle' => "round")
+Tk.mainloop
+%>
 </body>
 </html>
