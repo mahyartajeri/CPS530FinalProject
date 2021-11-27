@@ -1,1 +1,159 @@
+!DOCTYPE html>
+<html>
+<head>
+<title>Page 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+<!-- You MUST include jQuery before Fomantic -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+
+<style>
+    .column{
+        float: left;
+		width: 33.33%;
+        padding: 15px;
+    }
+	div{
+		font-size: 18px;
+	}
+	code{
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 50px;
+	}
+	
+	h2{
+		font-size: 40px;
+	}
+	h3{
+		font-size: 30px
+	}
+	h4 {
+		font-size: 20px
+	}
+	body{
+		margin: 25px;
+	}
+
+</style>
+
+</head>
+<body style="font-family: Zen Kurenaido; background-color: aliceblue;">
+<h1 style="text-align: center;">How to create a web page using Semantic UI and Ruby on Rails</h1><br>
+<div>
+    <h2 style="text-align:center">Semantic UI</h2>
+    <h3 style="text-align:center">Text</h3>
+    <p>
+        Text can be colored or resized using the text class. Note: Only usable within &lt;span&gt; tags
+		<br><br>
+		<h4>Colour</h4>
+			Syntax goes in the format: &lt;span class="ui <i>colour</i> text"&gt<i>The text you want formatted</i>&lt;/span&gt;<br><br>
+			Ex: 
+			<code>
+				This is &lt;span class="ui red text"&gt;red&lt;/span&gt; text and this is &lt;span class="ui blue text"&gt;blue&lt;/span&gt; text 
+				and this is &lt;span class="ui purple text"&gt;purple&lt;/span&gt; text
+			</code>
+		<br><br>
+		The code above has the following output: <br> <br>
+		<div style="font-weight: bold">
+			This is <span class="ui red text">red</span> text and this is <span class="ui blue text">blue</span> 
+			text and this is <span class="ui purple text">purple</span> text
+		</div><br><br>
+		<br>
+		<h4>Size</h4>
+		Syntax goes in the format: &lt;span class="ui <i>size</i> text"&gt;<i>The text you want formatted</i>&lt;/span&gt<br><br>
+		Ex: 
+		<code>
+			This is &lt;span class="ui small text"&gt;small text&lt;/span&gt;<br><br>
+			This is &lt;span class="ui medium text"&gt;medium text&lt;/span&gt;<br><br>
+			This is &lt;span class="ui large text"&gt;large text&lt;/span&gt;<br><br>
+		</code>
+		<br><br>
+		The code above has the following output: <br><br><br>
+		This is <span class="ui small text">small text</span><br><br>
+		This is <span class="ui medium text">medium text</span><br><br>
+		This is <span class="ui large text">large text</span><br><br>
+	</p>
+    <h3 style="text-align: center">Images</h3>
+	There are a wide variety of image class modifications
+	<h4>Size</h4>
+    <p> For example, you can easily edit how big you want your images to be with the size modification. Much like you do with text.<br>
+		Syntax goes in the format: &lt;img class="ui <i>size</i> image" src="<i>picture url or path</i>"&gt;<br><br>
+		Ex: 
+        <code>
+        &lt;img class="ui small image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg"&gt;
+        <br><br>
+        &lt;img class="ui medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg"&gt;
+        <br><br>
+        &lt;img class="ui large image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg"&gt;
+        </code>
+        <br>
+        <br>
+        Here are the respective outputs: <br><br>
+        <div class="row">
+            <div class="column">
+                <img class="ui small image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+            </div>
+            <div class="column">
+                <img class="ui medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+            </div>
+            <div class="column">
+                <img class="ui large image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+            </div>
+        </div>
+        <br>
+        <br>
+        <h4>Further Image Class Modifications</h4><br><br><br>
+		<div class="row,">
+			<div class="column">
+				<i>fluid</i> (takes up the entire container space):<br><br>
+				<img class="ui fluid medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+				<br><br>
+			</div>
+			<div class="column">
+				<i>rounded</i>: <br><br>
+				<img class="ui rounded medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+				<br><br>
+			</div>
+			<div class="column">
+				<i>circular</i>: <br><br>
+				<img class="ui circular medium image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg/330px-African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg">
+				<br><br>
+			</div>
+		</div>
+		For further documentation, visit <a href="https://fomantic-ui.com/introduction/getting-started.html">fomantic-ui.com</a>
+    </p>
+	<h2 style="text-align:center">Ruby on Rails</h2>
+	<h3>MVC Architecture</h3>
+	<p>Rails is made of a Model-View-Control architecture:<br><br>Model is your database<br><br>View is your web page<br><br>Control is the backend code of your web application</p>
+	<h3>Creating your first page</h3>
+	<p>If you go to the <i>Ruby</i> directory you made on the previous page, you'll find a variety of sub-directories. The one we'll be focusing on is the <i>app</i> directory.</p>
+	<p>Creating a web page involes initializing a controller and a view, you can do so by running the following command:<br><br>
+		<code>
+				cd Ruby
+		</code><br><br>
+		This puts you into the directory you made on the previous page, next run:<br><br>
+		<code>
+				rails generate controller home index 
+		</code><br><br>
+	</p>
+	<h3>View</h3>
+	<p>
+		The command above created a new view in the <i>views</i> sub-directory of <i>apps</i>. You can access the view in the <i>app/views/home/index.html.erb</i> file.<br><br>
+		From now on, you can create your webpage in regular html from <i>index.html.erb</i> . You can access it via url using <i>http://localhost:3000/home/index</i>
+	</p>
+	<h3>Demonstration</h3>
+	<p>Let's make an example webpage with Semantic UI and Ruby on Rails <br><br>
+	In your <i>index.html.erb</i> file, let's create a grid with that shows cards of different animals.</p>
+
+</div>
+<br>
+<br>
+</body>
+</html>
 
